@@ -10,3 +10,5 @@ Commands will come on a later date.
 Some of the code in this project is recycled from the Rank Up Quiz repository
 
 Repository link: https://github.com/jSagvold28/Rank-Up-Quiz
+
+
