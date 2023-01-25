@@ -186,3 +186,73 @@ local function queston5()
 end
 queston5()
 
+local function queston6()
+
+    print("")
+    print("Multiple Choice")
+    print("Answer with: a, b, c, d")
+    print("")
+
+    print("What is the most popular EV Company")
+    print("")
+
+    print("a: Polestar, b: GM, c: Tesla, d: Ford")
+
+    local answer = io.read()
+
+    if answer == "c" then
+
+        print("Correct, congratulations!")
+        points = points + 1210
+        print("+ 1210 points!")
+        rank = rank + 9
+        print("+ 9 rank!")
+        print("")
+        print("")
+
+    else
+        print("Sorry, Incorrect")
+
+        print("No points nor rank were taken away.")
+        print("")
+        print("")
+
+    end
+end
+queston6()
+
+local function queston7()
+
+
+    print("")
+    print("Multiple Choice")
+    print("Answer with: a, b, c, d")
+    print("")
+
+    print("What is the most hated car brand?")
+    print("")
+
+    print("a: Honda, b: Ford, c: BMW, d: Dodge")
+
+    local answer = io.read()
+
+    if answer == "b" then
+
+        print("Correct, congratulations!")
+        points = points + 655
+        print("+ 655 points!")
+        rank = rank + 3
+        print("+ 3 rank!")
+        print("")
+        print("")
+
+    else
+        print("Sorry, Incorrect")
+
+        print("No points nor rank were taken away.")
+        print("")
+        print("")
+
+    end
+end
+queston7()
