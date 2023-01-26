@@ -1,6 +1,7 @@
 
 local points = 0
 local rank = 0
+local correctAnswer = 8
 
 
 print("Brain Quiz")
@@ -36,10 +37,16 @@ local function queston1()
         rank = rank + 3
         print("+ 3 rank!")
 
+
+
     else
         print("Sorry, Incorrect")
 
         print("No points nor rank were taken away.")
+
+        correctAnswer = correctAnswer - 1
+        print("")
+        print()
 
     end
 end
@@ -68,10 +75,14 @@ local function queston2()
         rank = rank + 2
         print("+ 2 rank!")
 
+
+
     else
         print("Sorry, Incorrect")
 
         print("No points nor rank were taken away.")
+
+        correctAnswer = correctAnswer - 1
         print("")
         print("")
 
@@ -104,12 +115,16 @@ local function queston3()
         print("")
         print("")
 
+
+
     else
         print("Sorry, Incorrect")
 
         print("No points nor rank were taken away.")
         print("")
         print("")
+
+        correctAnswer = correctAnswer - 1
 
     end
 end
@@ -139,12 +154,15 @@ local function queston4()
         print("")
         print("")
 
+
+
     else
         print("Sorry, Incorrect")
 
         print("No points nor rank were taken away.")
         print("")
         print("")
+        correctAnswer = correctAnswer - 1
 
     end
 end
@@ -174,6 +192,8 @@ local function queston5()
         print("+ 10 rank!")
         print("")
         print("")
+        
+
 
     else
         print("Sorry, Incorrect")
@@ -181,6 +201,8 @@ local function queston5()
         print("No points nor rank were taken away.")
         print("")
         print("")
+
+        correctAnswer = correctAnswer - 1
 
     end
 end
@@ -210,12 +232,16 @@ local function queston6()
         print("")
         print("")
 
+
+
     else
         print("Sorry, Incorrect")
 
         print("No points nor rank were taken away.")
         print("")
         print("")
+
+        correctAnswer = correctAnswer - 1
 
     end
 end
@@ -246,13 +272,82 @@ local function queston7()
         print("")
         print("")
 
+
     else
         print("Sorry, Incorrect")
 
         print("No points nor rank were taken away.")
         print("")
         print("")
+        correctAnswer = correctAnswer - 1
 
     end
 end
 queston7()
+
+local function queston8()
+
+    print("")
+    print("Multiple Choice")
+    print("Answer with: a, b, c, d")
+    print("")
+
+    print("")
+    print("What does HTTPS stand for in websites?")
+
+    print("a: HyperTpe TransferSecure, b: HyperText Transfer Protocal, c: short for secure password")
+
+    local answer = io.read()
+
+    if answer == "b" then
+
+        print("Correct, congratulations!")
+        points = points + 2719
+        print("+ 2719 points!")
+        rank = rank + 15
+        print("+ 15 rank!")
+        print("")
+        print("")
+
+
+    else
+        print("Sorry, Incorrect")
+
+        print("No points nor rank were taken away.")
+        print("")
+        print("")
+        correctAnswer = correctAnswer - 1
+
+    end
+end
+queston8()
+
+print("Game has ended!")
+print("End Game results ")
+
+local function fetchGameResults()
+
+    print("Correct answers (out of 8): ".. correctAnswer)
+
+    print("Total points: ".. points)
+    print("Achived Rank: ".. rank)
+    print("")
+    print("")
+
+end
+fetchGameResults()
+
+-- print("If you would like to clear the console type 'clr'")
+
+-- local input = io.read()
+
+-- if input == "clr" then
+
+-- local function clearConsole()
+
+--     io.write("\27[2J")
+--     os.execute("cls")
+--     os.execute("clear")
+
+-- end
+-- clearConsole()
