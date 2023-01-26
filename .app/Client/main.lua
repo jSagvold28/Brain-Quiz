@@ -32,8 +32,8 @@ local function queston1()
     if answer == "b" then
 
         print("Congratulations!")
-        points = points + 719
-        print("+ 719 points!")
+        points = points + 883
+        print("+ 883 points!")
         rank = rank + 3
         print("+ 3 rank!")
 
@@ -70,10 +70,10 @@ local function queston2()
     if answer == "d" then
 
         print("Correct, congratulations!")
-        points = points + 825
-        print("+ 825 points!")
-        rank = rank + 2
-        print("+ 2 rank!")
+        points = points + 1112
+        print("+ 112 points!")
+        rank = rank + 4
+        print("+ 4 rank!")
 
 
 
@@ -147,10 +147,10 @@ local function queston4()
     if answer == "b" then
 
         print("Correct, congratulations!")
-        points = points + 662
-        print("+ 662 points!")
-        rank = rank + 2
-        print("+ 2 rank!")
+        points = points + 1155
+        print("+ 1155 points!")
+        rank = rank + 6
+        print("+ 6 rank!")
         print("")
         print("")
 
@@ -188,8 +188,8 @@ local function queston5()
         print("Correct, congratulations!")
         points = points + 1719
         print("+ 1719 points!")
-        rank = rank + 10
-        print("+ 10 rank!")
+        rank = rank + 17
+        print("+ 17 rank!")
         print("")
         print("")
         
@@ -265,10 +265,10 @@ local function queston7()
     if answer == "b" then
 
         print("Correct, congratulations!")
-        points = points + 655
-        print("+ 655 points!")
-        rank = rank + 3
-        print("+ 3 rank!")
+        points = points + 886
+        print("+ 886 points!")
+        rank = rank + 5
+        print("+ 5 rank!")
         print("")
         print("")
 
@@ -331,23 +331,6 @@ local function fetchGameResults()
 
     print("Total points: ".. points)
     print("Achived Rank: ".. rank)
-    print("")
-    print("")
 
 end
 fetchGameResults()
-
--- print("If you would like to clear the console type 'clr'")
-
--- local input = io.read()
-
--- if input == "clr" then
-
--- local function clearConsole()
-
---     io.write("\27[2J")
---     os.execute("cls")
---     os.execute("clear")
-
--- end
--- clearConsole()
