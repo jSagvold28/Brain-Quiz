@@ -2,6 +2,7 @@
 local points = 0
 local rank = 0
 local correctAnswer = 8
+local money = 0 
 
 
 print("Brain Quiz")
@@ -36,6 +37,8 @@ local function queston1()
         print("+ 883 points!")
         rank = rank + 3
         print("+ 3 rank!")
+        money = money + 600
+        print("Added $600!")
 
 
 
@@ -74,6 +77,10 @@ local function queston2()
         print("+ 112 points!")
         rank = rank + 4
         print("+ 4 rank!")
+        money = money + 1122
+        print("Added $1122!")
+        print("")
+        print("")
 
 
 
@@ -112,9 +119,10 @@ local function queston3()
         print("+ 1201 points!")
         rank = rank + 8
         print("+ 8 rank!")
+        money = money + 222
+        print("Added $222!")
         print("")
         print("")
-
 
 
     else
@@ -156,6 +164,7 @@ local function queston4()
 
 
 
+
     else
         print("Sorry, Incorrect")
 
@@ -190,6 +199,8 @@ local function queston5()
         print("+ 1719 points!")
         rank = rank + 17
         print("+ 17 rank!")
+        money = money + 996
+        print("Added $996!")
         print("")
         print("")
         
@@ -229,6 +240,8 @@ local function queston6()
         print("+ 1210 points!")
         rank = rank + 9
         print("+ 9 rank!")
+        money = money + 442
+        print("Added $442!")
         print("")
         print("")
 
@@ -269,6 +282,8 @@ local function queston7()
         print("+ 886 points!")
         rank = rank + 5
         print("+ 5 rank!")
+        money = money + 815
+        print("Added $815!")
         print("")
         print("")
 
@@ -306,6 +321,8 @@ local function queston8()
         print("+ 2719 points!")
         rank = rank + 15
         print("+ 15 rank!")
+        money = money + 501
+        print("Added $501!")
         print("")
         print("")
 
@@ -331,6 +348,7 @@ local function fetchGameResults()
 
     print("Total points: ".. points)
     print("Achived Rank: ".. rank)
+    print("Total cash: ".. money)
 
 end
 fetchGameResults()
