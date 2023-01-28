@@ -43,7 +43,7 @@ local function queston1()
 
 
     else
-        print("Sorry, Incorrect")
+        print("Incorrect, you can do it!")
 
 
         print("No points nor rank were taken away.")
