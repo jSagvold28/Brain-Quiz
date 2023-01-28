@@ -45,6 +45,7 @@ local function queston1()
     else
         print("Sorry, Incorrect")
 
+
         print("No points nor rank were taken away.")
 
         correctAnswer = correctAnswer - 1
